@@ -721,6 +721,38 @@ const en: Deck = {
     },
     {
       type: "content",
+      eyebrow: "Stage 4 · Version Control",
+      title: "Git: Send Your Files to GitHub",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "Download Git:",
+          text: "Free installer for Windows, macOS and Linux at [git-scm.com/downloads](https://git-scm.com/downloads).",
+        },
+        {
+          marker: "bullet",
+          bold: "Start tracking:",
+          text: "`git init` — turns your project folder into a Git repository.",
+        },
+        {
+          marker: "bullet",
+          bold: "Stage your files:",
+          text: "`git add .` — selects every changed file for the next save point.",
+        },
+        {
+          marker: "bullet",
+          bold: "Save a snapshot:",
+          text: "`git commit -m \"first version\"` — records the staged files with a short message.",
+        },
+        {
+          marker: "bullet",
+          bold: "Upload to GitHub:",
+          text: "`git push` — sends your commits to the repository online.",
+        },
+      ],
+    },
+    {
+      type: "content",
       eyebrow: "Stage 4 · Free Hosting",
       title: "Publishing in 4 Simple Steps",
       lines: [
@@ -728,7 +760,7 @@ const en: Deck = {
           marker: "number",
           number: 1,
           bold: "Create repository:",
-          text: "On GitHub, create a public repository named `username.github.io` (replace username with your exact handle).",
+          text: "On [GitHub](https://github.com), create a public repository named `username.github.io` (replace username with your exact handle).",
         },
         {
           marker: "number",

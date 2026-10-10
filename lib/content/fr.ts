@@ -721,6 +721,38 @@ const fr: Deck = {
     },
     {
       type: "content",
+      eyebrow: "Étape 4 · Gestion de versions",
+      title: "Git : envoyer vos fichiers sur GitHub",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "Télécharger Git :",
+          text: "Installeur gratuit pour Windows, macOS et Linux sur [git-scm.com/downloads](https://git-scm.com/downloads).",
+        },
+        {
+          marker: "bullet",
+          bold: "Démarrer le suivi :",
+          text: "`git init` — transforme le dossier du projet en dépôt Git.",
+        },
+        {
+          marker: "bullet",
+          bold: "Préparer les fichiers :",
+          text: "`git add .` — sélectionne tous les fichiers modifiés pour la prochaine sauvegarde.",
+        },
+        {
+          marker: "bullet",
+          bold: "Enregistrer une version :",
+          text: "`git commit -m \"première version\"` — enregistre les fichiers préparés avec un court message.",
+        },
+        {
+          marker: "bullet",
+          bold: "Envoyer sur GitHub :",
+          text: "`git push` — envoie vos commits vers le dépôt en ligne.",
+        },
+      ],
+    },
+    {
+      type: "content",
       eyebrow: "Étape 4 · Hébergement gratuit",
       title: "Publier son site en 4 étapes simples",
       lines: [
@@ -728,7 +760,7 @@ const fr: Deck = {
           marker: "number",
           number: 1,
           bold: "Créer le dépôt GitHub :",
-          text: "Créer un dépôt public nommé `username.github.io` (en remplaçant username par votre identifiant exact).",
+          text: "Sur [GitHub](https://github.com), créer un dépôt public nommé `username.github.io` (en remplaçant username par votre identifiant exact).",
         },
         {
           marker: "number",

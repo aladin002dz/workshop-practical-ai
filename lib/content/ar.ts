@@ -721,6 +721,38 @@ const ar: Deck = {
     },
     {
       type: "content",
+      eyebrow: "المرحلة 4 · التحكم في الإصدارات",
+      title: "Git: ارفع ملفاتك إلى GitHub",
+      lines: [
+        {
+          marker: "bullet",
+          bold: "تحميل Git:",
+          text: "برنامج مجاني لأنظمة Windows وmacOS وLinux من [git-scm.com/downloads](https://git-scm.com/downloads).",
+        },
+        {
+          marker: "bullet",
+          bold: "بدء التتبع:",
+          text: "`git init` — يحوّل مجلد مشروعك إلى مستودع Git.",
+        },
+        {
+          marker: "bullet",
+          bold: "تجهيز الملفات:",
+          text: "`git add .` — يحدد كل الملفات المعدّلة للحفظ القادم.",
+        },
+        {
+          marker: "bullet",
+          bold: "حفظ نسخة:",
+          text: "`git commit -m \"first version\"` — يسجّل الملفات المجهّزة مع رسالة قصيرة.",
+        },
+        {
+          marker: "bullet",
+          bold: "الرفع إلى GitHub:",
+          text: "`git push` — يرسل تعديلاتك إلى المستودع على الإنترنت.",
+        },
+      ],
+    },
+    {
+      type: "content",
       eyebrow: "المرحلة 4 · الاستضافة المجانية",
       title: "نشر موقعك في 4 خطوات عملية",
       lines: [
@@ -728,7 +760,7 @@ const ar: Deck = {
           marker: "number",
           number: 1,
           bold: "إنشاء المستودع:",
-          text: "أنشئ مستودعاً عاماً على GitHub باسم `username.github.io` (استبدل username باسم حسابك تماماً).",
+          text: "أنشئ مستودعاً عاماً على [GitHub](https://github.com) باسم `username.github.io` (استبدل username باسم حسابك تماماً).",
         },
         {
           marker: "number",

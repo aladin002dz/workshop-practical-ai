@@ -6,7 +6,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 1/32 : Title
+### Slide 1/33 : Title
 
 - **Title:** Practical AI: From Idea to Personal Website
 - **Subtitle:** Plan, design, build and deploy your portfolio on GitHub Pages without complex setup
@@ -14,7 +14,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 2/32 : A Live Website on Your Phone
+### Slide 2/33 : A Live Website on Your Phone
 
 *Our Goal*
 
@@ -25,7 +25,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 3/32 : The 4 Practical Stages
+### Slide 3/33 : The 4 Practical Stages
 
 *The Roadmap*
 
@@ -36,7 +36,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 4/32 : Four Free Tools, One Workflow [Beginner]
+### Slide 4/33 : Four Free Tools, One Workflow [Beginner]
 
 *Today's Toolkit*
 
@@ -47,13 +47,13 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 5/32 : Stage 1 (section divider)
+### Slide 5/33 : Stage 1 (section divider)
 
 - **Planning & Content Structuring**
 
 ---
 
-### Slide 6/32 : Audience First: Why Build a Website?
+### Slide 6/33 : Audience First: Why Build a Website?
 
 *Stage 1 · Audience & Purpose*
 
@@ -64,7 +64,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 7/32 : The RCTFC Prompting Framework
+### Slide 7/33 : The RCTFC Prompting Framework
 
 *Stage 1 · Prompting Framework*
 
@@ -76,7 +76,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 8/32 : From a Vague Wish to a Precise Brief
+### Slide 8/33 : From a Vague Wish to a Precise Brief
 
 *Stage 1 · Before & After*
 
@@ -90,7 +90,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 9/32 : 5 Habits for Better Answers [Beginner]
+### Slide 9/33 : 5 Habits for Better Answers [Beginner]
 
 *Stage 1 · Prompting Tips*
 
@@ -102,7 +102,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 10/32 : Pro Prompting Techniques [Advanced]
+### Slide 10/33 : Pro Prompting Techniques [Advanced]
 
 *Stage 1 · Prompting Tips*
 
@@ -114,7 +114,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 11/32 : Reliable Facts, Protected Privacy
+### Slide 11/33 : Reliable Facts, Protected Privacy
 
 *Stage 1 · Data & Privacy*
 
@@ -125,7 +125,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 12/32 : Gems & Skills: Write Your Rules Once
+### Slide 12/33 : Gems & Skills: Write Your Rules Once
 
 *Stage 1 · Reusable Instructions*
 
@@ -136,7 +136,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 13/32 : How to Write a Great Skill or Gem [Advanced]
+### Slide 13/33 : How to Write a Great Skill or Gem [Advanced]
 
 *Stage 1 · Reusable Instructions*
 
@@ -148,13 +148,13 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 14/32 : Stage 2 (section divider)
+### Slide 14/33 : Stage 2 (section divider)
 
 - **Visual Design & Layout Reference**
 
 ---
 
-### Slide 15/32 : Design Essentials for Modern Portfolios [Beginner]
+### Slide 15/33 : Design Essentials for Modern Portfolios [Beginner]
 
 *Stage 2 · Principles*
 
@@ -166,7 +166,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 16/32 : Prompting Nano Banana for Web Mockups
+### Slide 16/33 : Prompting Nano Banana for Web Mockups
 
 *Stage 2 · Nano Banana*
 
@@ -178,7 +178,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 17/32 : From Image Mockup to Working Website
+### Slide 17/33 : From Image Mockup to Working Website
 
 *Stage 2 · Visual Reference*
 
@@ -189,7 +189,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 18/32 : Design Systems, DESIGN.md & Templates [Advanced]
+### Slide 18/33 : Design Systems, DESIGN.md & Templates [Advanced]
 
 *Stage 2 · Design Systems*
 
@@ -201,13 +201,13 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 19/32 : Stage 3 (section divider)
+### Slide 19/33 : Stage 3 (section divider)
 
 - **Building with Antigravity**
 
 ---
 
-### Slide 20/32 : The Web Trio: HTML, CSS & JavaScript
+### Slide 20/33 : The Web Trio: HTML, CSS & JavaScript
 
 *Stage 3 · Code Generation*
 
@@ -218,7 +218,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 21/32 : Getting the Best from Antigravity
+### Slide 21/33 : Getting the Best from Antigravity
 
 *Stage 3 · Working with an Agent*
 
@@ -230,7 +230,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 22/32 : Responsive: One Site, Every Screen
+### Slide 22/33 : Responsive: One Site, Every Screen
 
 *Stage 3 · Responsive Design*
 
@@ -242,7 +242,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 23/32 : Accessible to Everyone
+### Slide 23/33 : Accessible to Everyone
 
 *Stage 3 · Accessibility*
 
@@ -254,7 +254,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 24/32 : SEO: Help People Find You
+### Slide 24/33 : SEO: Help People Find You
 
 *Stage 3 · SEO*
 
@@ -266,7 +266,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 25/32 : Fast Sites & AI-Powered Audits [Advanced]
+### Slide 25/33 : Fast Sites & AI-Powered Audits [Advanced]
 
 *Stage 3 · Performance*
 
@@ -278,7 +278,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 26/32 : Review Before You Publish
+### Slide 26/33 : Review Before You Publish
 
 *Stage 3 · Quality Checklist*
 
@@ -289,24 +289,36 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 27/32 : Stage 4 (section divider)
+### Slide 27/33 : Stage 4 (section divider)
 
 - **Publishing on GitHub Pages**
 
 ---
 
-### Slide 28/32 : Publishing in 4 Simple Steps
+### Slide 28/33 : Git: Send Your Files to GitHub
+
+*Stage 4 · Version Control*
+
+- **Download Git:** Free installer for Windows, macOS and Linux at [git-scm.com/downloads](https://git-scm.com/downloads).
+- **Start tracking:** `git init` — turns your project folder into a Git repository.
+- **Stage your files:** `git add .` — selects every changed file for the next save point.
+- **Save a snapshot:** `git commit -m "first version"` — records the staged files with a short message.
+- **Upload to GitHub:** `git push` — sends your commits to the repository online.
+
+---
+
+### Slide 29/33 : Publishing in 4 Simple Steps
 
 *Stage 4 · Free Hosting*
 
-1. **Create repository:** On GitHub, create a public repository named `username.github.io` (replace username with your exact handle).
+1. **Create repository:** On [GitHub](https://github.com), create a public repository named `username.github.io` (replace username with your exact handle).
 2. **Add your files:** Push from Antigravity or upload index.html, styles.css and script.js to the root of the main branch.
 3. **Enable Pages:** In Settings → Pages: set Source to 'Deploy from a branch', choose 'main' and '/(root)', then Save.
 4. **Visit your live site:** After a minute or two, open `https://username.github.io` on your phone!
 
 ---
 
-### Slide 29/32 : Going Further After Launch [Advanced]
+### Slide 30/33 : Going Further After Launch [Advanced]
 
 *Stage 4 · After Launch*
 
@@ -318,7 +330,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 30/32 : You Are the Editor and Publisher
+### Slide 31/33 : You Are the Editor and Publisher
 
 *Stage 4 · Ethical Responsibility*
 
@@ -329,7 +341,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 31/32 : Closing — Your Next Step: Build Your Own
+### Slide 32/33 : Closing — Your Next Step: Build Your Own
 
 AI provides the leverage and speed. Your personal voice, honesty, and consistent practice create the real value.
 
@@ -340,7 +352,7 @@ AI provides the leverage and speed. Your personal voice, honesty, and consistent
 
 ---
 
-### Slide 32/32 : Stay in Touch
+### Slide 33/33 : Stay in Touch
 
 Keep learning after the workshop — scan a code to follow along.
 
