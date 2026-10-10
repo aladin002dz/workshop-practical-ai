@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/*
+ * Theme: follows the OS setting (prefers-color-scheme) unless the visitor
+ * picked one with the toggle, which sets <html data-theme="light|dark">
+ * (see components/ThemeToggle.tsx and the inline script in RootDocument).
+ */
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: var(--font-noto-sans-arabic), ui-sans-serif, system-ui,
+    sans-serif;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-solid: var(--accent-solid);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-line: var(--accent-line);
+  --color-accent-glow: var(--accent-glow);
+}
+
+/*
+ * Palette: five hues at equal OKLCH lightness/chroma (brand violet 285,
+ * plan blue 250, design magenta 330, build amber 55, publish green 160) so
+ * they read as one family. Contrast vs. --bg (WCAG 2.x):
+ *   light — fg 16.2, muted 10.0, subtle 6.0, accent text ≥ 6.2 (≥ 5.2 on
+ *           tinted chips), solid accents ≥ 3.8 (non-text UI needs 3)
+ *   dark  — fg 17.5, muted 12.5, subtle 8.3, accent text ≥ 10.4,
+ *           solid accents ≥ 7.8
+ */
+:root {
+  color-scheme: light;
+  --bg: #f9fafd;
+  --fg: #171c2d;
+  --fg-muted: #3a3f50;
+  --fg-subtle: #5b606f;
+  --surface: rgb(23 28 45 / 0.04);
+  --surface-hover: rgb(23 28 45 / 0.08);
+  --line: rgb(23 28 45 / 0.14);
+  --qr-frame: #ffffff;
+
+  --brand-text: #5849b2;
+  --brand-solid: #7366d9;
+  --plan-text: #0060a6;
+  --plan-solid: #017dd6;
+  --design-text: #8c3287;
+  --design-solid: #af4da9;
+  --build-text: #8f4802;
+  --build-solid: #b85f05;
+  --publish-text: #056641;
+  --publish-solid: #06915f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0c0f1a;
+    --fg: #f4f5f9;
+    --fg-muted: #cdd1dd;
+    --fg-subtle: #a6aab8;
+    --surface: rgb(255 255 255 / 0.05);
+    --surface-hover: rgb(255 255 255 / 0.1);
+    --line: rgb(255 255 255 / 0.12);
+    --qr-frame: rgb(255 255 255 / 0.05);
+
+    --brand-text: #bdbcfe;
+    --brand-solid: #a29dfe;
+    --plan-text: #96c9fe;
+    --plan-solid: #61b0fe;
+    --design-text: #f0a7e9;
+    --design-solid: #df86d7;
+    --build-text: #feb079;
+    --build-solid: #f28e42;
+    --publish-text: #78dca9;
+    --publish-solid: #38c789;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0c0f1a;
+  --fg: #f4f5f9;
+  --fg-muted: #cdd1dd;
+  --fg-subtle: #a6aab8;
+  --surface: rgb(255 255 255 / 0.05);
+  --surface-hover: rgb(255 255 255 / 0.1);
+  --line: rgb(255 255 255 / 0.12);
+  --qr-frame: rgb(255 255 255 / 0.05);
+
+  --brand-text: #bdbcfe;
+  --brand-solid: #a29dfe;
+  --plan-text: #96c9fe;
+  --plan-solid: #61b0fe;
+  --design-text: #f0a7e9;
+  --design-solid: #df86d7;
+  --build-text: #feb079;
+  --build-solid: #f28e42;
+  --publish-text: #78dca9;
+  --publish-solid: #38c789;
+}
+
+/* The active accent is chosen per slide via data-accent on the deck root. */
+:root,
+[data-accent="brand"] {
+  --accent: var(--brand-text);
+  --accent-solid: var(--brand-solid);
+}
+[data-accent="plan"] {
+  --accent: var(--plan-text);
+  --accent-solid: var(--plan-solid);
+}
+[data-accent="design"] {
+  --accent: var(--design-text);
+  --accent-solid: var(--design-solid);
+}
+[data-accent="build"] {
+  --accent: var(--build-text);
+  --accent-solid: var(--build-solid);
+}
+[data-accent="publish"] {
+  --accent: var(--publish-text);
+  --accent-solid: var(--publish-solid);
+}
+:root,
+[data-accent] {
+  --accent-soft: color-mix(in oklab, var(--accent-solid) 14%, transparent);
+  --accent-line: color-mix(in oklab, var(--accent-solid) 45%, transparent);
+  --accent-glow: color-mix(in oklab, var(--accent-solid) 16%, transparent);
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior-y: contain;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+[dir="rtl"] body,
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+/* Keep swipe gestures from also scrolling/zooming the page. */
+.slide-viewport {
+  touch-action: pan-y;
+}
+
+::selection {
+  background-color: var(--accent-line);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-solid);
+  outline-offset: 2px;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-in {
+    animation: none;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "practical-ai-website-workshop-chlef",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Practical AI: Personal Website Workshop — Interactive Slides (AR / EN / FR)",
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "node scripts/generate-og-image.mjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "qrcode-generator": "^2.0.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2"
+  }
+}
