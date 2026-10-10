@@ -56,13 +56,18 @@ export default function Slideshow({ deck }: { deck: Deck }) {
 
   const next = useCallback(() => goTo(index + 1), [goTo, index]);
   const prev = useCallback(() => goTo(index - 1), [goTo, index]);
+  // RTL (Arabic): "forward" points left, so the arrow keys and swipes mirror
+  // the on-screen buttons, which already flip via flex-row + rtl: chevrons.
+  const isRtl = deck.locale === "ar";
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
-      if (e.key === "ArrowRight" || e.key === "PageDown") {
+      const forwardKey = isRtl ? "ArrowLeft" : "ArrowRight";
+      const backKey = isRtl ? "ArrowRight" : "ArrowLeft";
+      if (e.key === forwardKey || e.key === "PageDown") {
         e.preventDefault();
         next();
-      } else if (e.key === "ArrowLeft" || e.key === "PageUp") {
+      } else if (e.key === backKey || e.key === "PageUp") {
         e.preventDefault();
         prev();
       } else if (e.key === "Home") {
@@ -75,7 +80,7 @@ export default function Slideshow({ deck }: { deck: Deck }) {
     }
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [next, prev, goTo, total]);
+  }, [next, prev, goTo, total, isRtl]);
 
   useEffect(() => {
     function onFullscreenChange() {
@@ -110,10 +115,8 @@ export default function Slideshow({ deck }: { deck: Deck }) {
     const dx = t.clientX - start.x;
     const dy = t.clientY - start.y;
     if (Math.abs(dx) < SWIPE_THRESHOLD || Math.abs(dx) < Math.abs(dy)) return;
-    // Swipe left -> next slide, swipe right -> previous slide (same physical
-    // gesture in every language, like a page turn — direction isn't mirrored
-    // for RTL so it stays predictable across the FR/EN/AR versions).
-    if (dx < 0) next();
+    // LTR: swipe left -> next, swipe right -> previous. Mirrored for RTL.
+    if (isRtl ? dx > 0 : dx < 0) next();
     else prev();
   }
 
