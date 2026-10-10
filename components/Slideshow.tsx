@@ -237,10 +237,10 @@ export default function Slideshow({ deck }: { deck: Deck }) {
 
       {index === 0 ? (
         <div className="pointer-events-none absolute bottom-24 end-4 z-10 flex flex-col items-center gap-1.5 sm:bottom-28 sm:end-8">
-          <div className="pointer-events-auto rounded-2xl border border-line bg-[var(--qr-frame)] p-2 shadow-lg shadow-black/10 backdrop-blur">
-            <QrCode value={LIVE_PREVIEW_URL} label={deck.ui.scanToOpen} />
+          <div className="pointer-events-auto rounded-2xl border border-line bg-[var(--qr-frame)] p-2.5 shadow-lg shadow-black/10 backdrop-blur [&>svg]:h-32 [&>svg]:w-32 sm:[&>svg]:h-44 sm:[&>svg]:w-44">
+            <QrCode value={LIVE_PREVIEW_URL} label={deck.ui.scanToOpen} size={176} />
           </div>
-          <span className="max-w-[7rem] text-center text-[0.7rem] leading-tight text-fg-subtle">
+          <span className="max-w-[11rem] text-center text-xs leading-tight text-fg-subtle">
             {deck.ui.scanToOpen}
           </span>
         </div>
