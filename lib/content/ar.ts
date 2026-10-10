@@ -834,6 +834,33 @@ const ar: Deck = {
         },
       ],
     },
+    {
+      type: "links",
+      title: "لنبقَ على تواصل",
+      message: "واصل التعلّم بعد الورشة — امسح الرمز لمتابعتنا.",
+      links: [
+        {
+          label: "مركز التسلية العلمية الغلام محمد",
+          kind: "صفحة فيسبوك",
+          url: "https://www.facebook.com/profile.php?id=100093977586577",
+        },
+        {
+          label: "نادي تمكين للمهارات الإعلامية",
+          kind: "صفحة فيسبوك",
+          url: "https://www.facebook.com/profile.php?id=61587196953545",
+        },
+        {
+          label: "mahfoudh.dev",
+          kind: "الموقع الشخصي",
+          url: "https://mahfoudh.dev/",
+        },
+        {
+          label: "Mahfoudh Tech",
+          kind: "قناة يوتيوب",
+          url: "https://www.youtube.com/@mahfoudh-tech-ar",
+        },
+      ],
+    },
   ],
 };
 

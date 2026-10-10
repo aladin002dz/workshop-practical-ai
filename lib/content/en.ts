@@ -834,6 +834,33 @@ const en: Deck = {
         },
       ],
     },
+    {
+      type: "links",
+      title: "Stay in Touch",
+      message: "Keep learning after the workshop — scan a code to follow along.",
+      links: [
+        {
+          label: "مركز التسلية العلمية الغلام محمد",
+          kind: "Facebook page",
+          url: "https://www.facebook.com/profile.php?id=100093977586577",
+        },
+        {
+          label: "نادي تمكين للمهارات الإعلامية",
+          kind: "Facebook page",
+          url: "https://www.facebook.com/profile.php?id=61587196953545",
+        },
+        {
+          label: "mahfoudh.dev",
+          kind: "Website",
+          url: "https://mahfoudh.dev/",
+        },
+        {
+          label: "Mahfoudh Tech",
+          kind: "YouTube channel",
+          url: "https://www.youtube.com/@mahfoudh-tech-ar",
+        },
+      ],
+    },
   ],
 };
 

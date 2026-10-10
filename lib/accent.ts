@@ -27,7 +27,9 @@ const STAGE_ACCENTS: Accent[] = ["plan", "design", "build", "publish"];
  */
 export function getAccent(slides: Slide[], index: number): Accent {
   const current = slides[index];
-  if (current?.type === "title" || current?.type === "closing") {
+  if (current?.type === "title" ||
+    current?.type === "closing" ||
+    current?.type === "links") {
     return "brand";
   }
 

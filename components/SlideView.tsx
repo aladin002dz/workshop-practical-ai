@@ -1,6 +1,7 @@
 import type { Slide, UiStrings } from "@/lib/content";
 import { ACCENT as a } from "@/lib/accent";
 import { renderInline } from "@/lib/inlineMarkdown";
+import QrCode from "./QrCode";
 import SlideBody from "./SlideBody";
 
 export default function SlideView({
@@ -82,6 +83,43 @@ export default function SlideView({
             </div>
           ))}
         </dl>
+      </div>
+    );
+  }
+
+  if (slide.type === "links") {
+    return (
+      <div className="flex h-full w-full flex-col items-center justify-center text-center">
+        <h2 className="max-w-3xl text-[clamp(1.8rem,5.5vw,3.25rem)] font-extrabold leading-tight tracking-tight text-fg">
+          {slide.title}
+        </h2>
+        {slide.message ? (
+          <p className="mt-4 max-w-xl text-[clamp(1rem,2.2vw,1.3rem)] text-fg-muted">
+            {slide.message}
+          </p>
+        ) : null}
+        <ul className="mt-8 grid w-full max-w-5xl grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+          {slide.links.map((link) => (
+            <li key={link.url}>
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex h-full flex-col items-center gap-2 rounded-2xl border p-3 transition hover:-translate-y-0.5 sm:p-4 ${a.border} ${a.bg}`}
+              >
+                <span className={`text-[0.7rem] font-semibold uppercase tracking-wide sm:text-xs ${a.text}`}>
+                  {link.kind}
+                </span>
+                <span className="flex min-h-[2.5rem] items-center text-sm font-semibold leading-snug text-fg sm:text-base">
+                  {link.label}
+                </span>
+                <span className="mt-auto rounded-xl bg-white p-1.5">
+                  <QrCode value={link.url} size={120} label={link.label} />
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }

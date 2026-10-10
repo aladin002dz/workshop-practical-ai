@@ -67,5 +67,22 @@ function renderSlide(slide: Slide) {
           </dl>
         </>
       );
+
+    case "links":
+      return (
+        <>
+          <h2>{slide.title}</h2>
+          {slide.message ? <p>{slide.message}</p> : null}
+          <ul>
+            {slide.links.map((link) => (
+              <li key={link.url}>
+                <a href={link.url}>
+                  {link.label} — {link.kind}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      );
   }
 }

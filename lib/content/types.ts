@@ -47,7 +47,20 @@ export interface ClosingSlide {
   items: { label: string; value: string }[];
 }
 
-export type Slide = TitleSlide | BlockSlide | ContentSlide | ClosingSlide;
+/** Final slide: follow-up links, each shown with a scannable QR code. */
+export interface LinksSlide {
+  type: "links";
+  title: string;
+  message?: string;
+  links: { label: string; kind: string; url: string }[];
+}
+
+export type Slide =
+  | TitleSlide
+  | BlockSlide
+  | ContentSlide
+  | ClosingSlide
+  | LinksSlide;
 
 export interface UiStrings {
   langName: string;
