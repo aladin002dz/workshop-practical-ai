@@ -722,7 +722,7 @@ const ar: Deck = {
     {
       type: "content",
       eyebrow: "المرحلة 4 · التحكم في الإصدارات",
-      title: "Git: ارفع ملفاتك إلى GitHub",
+      title: "Git: تتبّع عملك واحفظ نسخه",
       lines: [
         {
           marker: "bullet",
@@ -754,7 +754,7 @@ const ar: Deck = {
     {
       type: "content",
       eyebrow: "المرحلة 4 · الاستضافة المجانية",
-      title: "نشر موقعك في 4 خطوات عملية",
+      title: "GitHub: انشر موقعك في 4 خطوات",
       lines: [
         {
           marker: "number",

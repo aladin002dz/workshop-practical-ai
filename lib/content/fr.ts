@@ -722,7 +722,7 @@ const fr: Deck = {
     {
       type: "content",
       eyebrow: "Étape 4 · Gestion de versions",
-      title: "Git : envoyer vos fichiers sur GitHub",
+      title: "Git : suivre et sauvegarder votre travail",
       lines: [
         {
           marker: "bullet",
@@ -754,7 +754,7 @@ const fr: Deck = {
     {
       type: "content",
       eyebrow: "Étape 4 · Hébergement gratuit",
-      title: "Publier son site en 4 étapes simples",
+      title: "GitHub : publier son site en 4 étapes",
       lines: [
         {
           marker: "number",

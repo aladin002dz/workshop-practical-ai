@@ -295,7 +295,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 28/33 : Git: Send Your Files to GitHub
+### Slide 28/33 : Git: Track and Save Your Work
 
 *Stage 4 · Version Control*
 
@@ -307,7 +307,7 @@ _32 slides — content generated from `lib/content/en.ts`._
 
 ---
 
-### Slide 29/33 : Publishing in 4 Simple Steps
+### Slide 29/33 : GitHub: Publish Your Site in 4 Steps
 
 *Stage 4 · Free Hosting*
 
